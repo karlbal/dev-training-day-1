@@ -1,0 +1,9 @@
+<a   href="#" class="list-group-item list-group-item-action" aria-current="true">
+    <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">{{ product.productName }}
+        </h5>
+        <fa-icon [ngStyle]="{'color': 'red'}" [icon]="faTimes" (click)="deleteClick()"></fa-icon>
+    </div>
+    <p class="mb-1">{{ product.quantityPerUnit }}</p>
+    <small class="text">$ {{ product.unitPrice }}</small>
+</a>

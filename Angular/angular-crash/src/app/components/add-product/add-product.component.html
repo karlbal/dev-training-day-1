@@ -1,0 +1,17 @@
+<form *ngIf="showAddProduct" class="mb-5" (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+        <label class="form-label" for="productName">Product Name</label>
+        <input type="text" class="form-control" [(ngModel)]="productName" name="ProductName" placeholder="add product name">
+    </div>
+    <div class="mb-3">
+        <label class="form-label" for="unitPrice">Unit Price</label>
+        <input type="number" class="form-control" [(ngModel)]="unitPrice" name="unitPrice" placeholder="Add Unit price"/>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" for="quantityPerUnit">Quantity per Unit</label>
+        <input type="text" class="form-control" [(ngModel)]="quantityPerUnit" name="quantityPerUnit" placeholder="Add Quantity per Unit"/>
+    </div>
+    <div class="d-grid mt-3">
+        <button type="submit" class="btn btn-block btn-primary">Save Product</button>
+    </div>
+</form>

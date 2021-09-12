@@ -1,0 +1,4 @@
+<div class="list-group">
+    <app-add-product (onAddProduct)="addProduct($event)"></app-add-product>
+    <app-product-item *ngFor="let item of products" [product]="item" (onDeleteClick)="deleteProduct($event)"></app-product-item>
+</div>

@@ -1,0 +1,4 @@
+<header class="d-flex justify-content-between mb-4 border-bottom">
+    <h1>Product Lists</h1>
+    <button [ngClass]="{'btn-success': !showAddProduct, 'btn-danger': showAddProduct }" class="btn btn-primary" (click)="toggleAddProduct()">{{ showAddProduct ? "Close" : "Add" }}</button>
+</header>
